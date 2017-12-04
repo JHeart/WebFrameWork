@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="false" key="J2EE_EXPORT_OVERWRITE"/>
+	<item value="false" key="J2EE_EXPORT_SOURCE"/>
+	<list key="MRU_RUNTIME_STORE">
+		<item value="Apache Tomcat v9.0"/>
+	</list>
+	<list key="J2EE_EXPORT_JST_WEB">
+		<item value="D:\필요한 프로그램들\apache-tomcat-8.5.24\helloSpringMVC.war"/>
+		<item value="D:\필요한 프로그램들\Tomcat\Apache Tomcat 9.0 Tomcat9\helloSpringMVC.war"/>
+		<item value="D:\필요한 프로그램들\Tomcat\Apache Tomcat 9.0 Tomcat9\webapps\HelloServlet.war"/>
+	</list>
+</section>

@@ -1,0 +1,12 @@
+package kr.ac.hansung.csemall;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainApp {
+
+	ClassPathXmlApplicationContext context =
+			new ClassPathXmlApplicationContext("kr/ac/hansung/conf/beans.xml");//empty container
+
+	offerDAO offerDAO = (offerDAO) context.getBean("offerDAO");
+	System.out.println("The record on is" + offerDAO.getRowCount());
+}

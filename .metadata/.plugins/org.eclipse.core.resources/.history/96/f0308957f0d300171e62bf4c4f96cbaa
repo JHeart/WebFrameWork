@@ -1,0 +1,8 @@
+package kr.ac.hansung.csemall;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainApp {
+
+	ClassPathXmlApplicationContext context = ClassPathXmlApplicationContext("kr/ac/hansung/conf/beans.xml");
+}

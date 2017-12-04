@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="helloDI"/>
+<aop-project name="helloDB"/>
+<aop-project name="helloAOP">
+<aspect-definition advice-class-name="kr.ac.hansung.spring.aop.Logger" advice-method-name="abouttoSound" advice-type="AFTER" aspect-end-line-number="27" aspect-name="id_logger" aspect-start-line-number="25" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/helloAOP/src/main/java/kr/ac/hansung/spring/aop/conf/animal.xml" pointcut-expression="selectSound()" proxy-target-class="false">
+<aop-reference advice-type="AFTER" bean="1:BeansModel|2:helloAOP|3:src/main/java/kr/ac/hansung/spring/aop/conf/animal.xml|7:beans:8|8:id_dog:11" bean-file="/helloAOP/src/main/java/kr/ac/hansung/spring/aop/conf/animal.xml" bean-start-line="11" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/helloAOP/src/main/java/kr/ac/hansung/spring/aop/conf/animal.xml" source="=helloAOP/src\/main\/java&lt;kr.ac.hansung.spring.aop{Logger.java[Logger~abouttoSound" source-start-line="17" target="=helloAOP/src\/main\/java&lt;kr.ac.hansung.spring.aop{Dog.java[Dog~sound" target-start-line="17"/>
+<aop-reference advice-type="AFTER" bean="1:BeansModel|2:helloAOP|3:src/main/java/kr/ac/hansung/spring/aop/conf/animal.xml|7:beans:8|8:id_cat:16" bean-file="/helloAOP/src/main/java/kr/ac/hansung/spring/aop/conf/animal.xml" bean-start-line="16" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/helloAOP/src/main/java/kr/ac/hansung/spring/aop/conf/animal.xml" source="=helloAOP/src\/main\/java&lt;kr.ac.hansung.spring.aop{Logger.java[Logger~abouttoSound" source-start-line="17" target="=helloAOP/src\/main\/java&lt;kr.ac.hansung.spring.aop{Cat.java[Cat~sound" target-start-line="11"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="springtest"/>
+<aop-project name="helloDB2"/>
+<aop-project name="helloSpringMVC"/>
+</aop-reference-model>
