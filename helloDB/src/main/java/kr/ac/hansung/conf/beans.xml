@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
 	<context:property-placeholder location="kr/ac/hansung/props/jdbc.properties" />
-
+	<context:annotation-config></context:annotation-config>
+	
 	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource"
 		destroy-method="close">
 		<property name="driverClassName" value="${jdbc.driverClassName}" />
@@ -14,10 +16,14 @@
 		<property name="password" value="${jdbc.password}" />
 	</bean>
 
+	<context:component-scan base-package="kr.ac.hansung.csemall">
+	</context:component-scan>
 	
-	
-	<bean id="offerDAO" class="kr.ac.hansung.csemall.OfferDAO">
+	<!-- <bean id="offerDAO" class="kr.ac.hansung.csemall.OfferDAO">
 		<property name="dataSource" ref="dataSource"></property>
-	</bean>
+	</bean> -->
 	
+	
+	
+	<!-- 명시된 package를 스캔해서 component를 찾아서 bean으로 등록해준다.-->
 </beans>
